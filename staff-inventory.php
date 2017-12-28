@@ -70,6 +70,7 @@
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
+
   <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
@@ -125,12 +126,11 @@
             </span>
           </a>
         </li>
-
-
       </ul>
     </section>
     <!-- /.sidebar -->
   </aside>
+
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -147,105 +147,72 @@
     </section>
 
     <!-- Main content -->
-      
     <section class="content">
-
+        <!-- Small boxes (Stat box) -->
         <div class="row">
-            <!-- Left col --> 
-            <div class="col-md-3">
-                <!-- Profile Image -->
-                <div class="box box-primary">
-                    <div class="box-body box-profile">
-                        <img class="profile-user-img img-responsive img-circle" src="dist/img/user4-128x128.jpg" alt="User profile picture"/>
-                        <h3 class="profile-username text-center">Itachi Uchiha</h3>
-                        <h3 class="box-title">Member Details</h3>
-                        <!-- /.box-header -->
-                        <div class="box-body">
-                            <strong><i class="fa fa-mars margin-r-5"></i><i class="fa fa-venus margin-r-5"></i> Gender</strong>
-                            <p class="text-muted">Male</p>
-                            <hr>
-                            <strong><i class="fa fa-map-marker margin-r-5"></i> Address</strong>
-                            <p class="text-muted">Block 8 Lot 13 Hidden Street, Barangay Uchiha, Konoha City, Konohagakure</p>
-                            <hr>
-                            <strong><i class="fa fa-birthday-cake margin-r-5"></i> Birthdate</strong>
-                            <p class="text-muted">June 9, 1983</p>
-                            <hr>
-                            <strong><i class="fa fa-mobile margin-r-5"></i> Phone Number</strong>
-                            <p class="text-muted">0917-256-8947</p><hr>
-                            <strong><i class="fa fa-at margin-r-5"></i> Email Address</strong>
-                            <p class="text-muted">amaterasu@naruto.com</p>
-                            <!-- /.box-body -->
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
-                </div>
-                
-                <div class="box box-primary">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">Membership Details</h3>
-                        <ul class="list-group list-group-unbordered">
-                            <li class="list-group-item">
-                                <b>Package</b> <a class="pull-right">Free Membership</a>
-                            </li>
-                            <li class="list-group-item">
-                                <b>Start Date</b> <a class="pull-right">November 23, 2014</a>
-                            </li>
-                            <li class="list-group-item">
-                                <b>Expiration</b> <a class="pull-right">November 23, 2020</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.box-body -->
-                </div>
-                <!-- /.Left col -->
-            </div>
-                <!-- right col (We are only adding the ID to make the widgets sortable)-->
-            <div class="col-md-9">
+
+            <div class="col-md-12">
                 <div class="nav-tabs-custom">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="#activity" data-toggle="tab">Reservations</a></li>
-                        <li><a href="#settings" data-toggle="tab">Edit Profile</a></li>
+                        <li class="active"><a href="#activity" data-toggle="tab">Inventory</a></li>
+                        <li><a href="#settings" data-toggle="tab">Stock-in</a></li>
                     </ul>
                     <div class="tab-content">
                         <div class="active tab-pane" id="activity">
-                            <h3 class="box-title">Reservation Details</h3>
-                        <ul class="list-group list-group-unbordered">
-                            <li class="list-group-item">
-                                <b>Check-in Date: </b> <a class="pull-right">January 10, 2018</a>
-                            </li>
-                            <li class="list-group-item">
-                                <b>Check-out Date: </b> <a class="pull-right">January 11, 2018</a>
-                            </li>
-                            <li class="list-group-item">
-                                <b>Room Type: </b> <a class="pull-right">Sihi Room</a>
-                            </li>
-                            <li class="list-group-item">
-                                <b>Add-Ons: </b> <a class="pull-right">Pick-up & Drop-Off(Butuan)</a>
-                            </li>
-                            <li class="list-group-item"> 
-                                <b> - </b> <a class="pull-right">Boat Transfer</a>
-                            </li>
-                            <li class="list-group-item"> 
-                                <b> -</b> <a class="pull-right">Catering(Lunch & Dinner)</a>
-                            </li>
-                            <li class="list-group-item">
-                                <b>Payment Status: </b> <a class="pull-right">50% Down Payment Made (Palawan Express)</a>
-                            </li>
-                            <li class="list-group-item">
-                                <b>Amount Deposited: </b> <a class="pull-right">P20,000.00</a>
-                            </li>
-                            <li class="list-group-item">
-                                <b>Tracking Number: </b> <a class="pull-right">ZAW123456789</a>
-                            </li>
-                            <li class="list-group-item">
-                                <b>Notes: </b> <a class="pull-right">We will be late for check-in because we will still be meeting with Hidan and Zetsu.</a>
-                            </li>
-                            <li class="list-group-item">
- 
-                                <center><a href="test.html" class="btn btn-primary btn-block"><b>Edit Reservation</b></a></center>
-                                </li>
-                        </ul>
+                            
+                            <div class="box-header">
+                                <h3 class="box-title">Supply Details</h3>
+
+                                <div class="box-tools">
+                                    <div class="input-group input-group-sm" style="width: 150px;">
+                                        <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+
+                                        <div class="input-group-btn">
+                                        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body table-responsive no-padding">
+                                <table class="table table-hover">
+                                    <tr>
+                                      <th>Total Supply</th>
+                                      <th>Item Name</th>
+                                      <th>Used Supply</th>
+                                      <th>Available Supply</th>
+                                      <th>Stock-in Status</th>
+                                    </tr>
+                                    <tr>
+                                      <td>83</td>
+                                      <td>Soap</td>
+                                      <td>12</td>
+                                      <td>71</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>19</td>
+                                      <td>Bed Sheets</td>
+                                      <td>10</td>
+                                      <td>9</td>
+                                      <td><span class="label label-warning">Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                      <td>57</td>
+                                      <td>Shampoo</td>
+                                      <td>44</td>
+                                      <td>13</td>
+                                      <td><span class="label label-warning">Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                      <td>75</td>
+                                      <td>Towels</td>
+                                      <td>24</td>
+                                      <td>21</td>
+                                      <td></td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                         
                         <!-- /.tab-pane -->
@@ -283,14 +250,14 @@
                 </div>
                 <!-- /.nav-tabs-custom -->
             </div>
-            <!-- right col -->          
+            
         </div>
-        <!-- /.row (main row) -->
-      </section>
-      
+    </section>
     <!-- /.content -->
+      
   </div>
   <!-- /.content-wrapper -->
+    
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.0
