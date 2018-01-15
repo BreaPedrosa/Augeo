@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -97,8 +99,8 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
         <li>
-          <a href="member-dashboard.php">
-            <i class="fa fa-user"></i> <span>Profile</span>
+          <a href="admin-dashboard.php">
+            <i class="fa fa-tachometer"></i> <span>Home</span>
             <span class="pull-right-container">
             </span>
           </a>
@@ -111,8 +113,15 @@
           </a>
         </li>
         <li>
-          <a href="pages/examples/invoice.html">
-            <i class="fa fa-money"></i> <span>Invoice</span>
+          <a href="admin-inventory.php">
+            <i class="fa fa-archive"></i> <span>Inventory</span>
+            <span class="pull-right-container">
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="admin-sales.php">
+            <i class="fa fa-archive"></i> <span>Sales</span>
             <span class="pull-right-container">
             </span>
           </a>
@@ -140,145 +149,84 @@
 
     <!-- Main content -->
       
+    <!-- Main content -->
     <section class="content">
-
-        <div class="row">
-            <!-- Left col --> 
-            <div class="col-md-3">
-                <!-- Profile Image -->
-                <div class="box box-primary">
-                    <div class="box-body box-profile">
-                        <img class="profile-user-img img-responsive img-circle" src="dist/img/user4-128x128.jpg" alt="User profile picture"/>
-                        <h3 class="profile-username text-center">Itachi Uchiha</h3>
-                        <h3 class="box-title">Member Details</h3>
-                        <!-- /.box-header -->
-                        <div class="box-body">
-                            <strong><i class="fa fa-mars margin-r-5"></i><i class="fa fa-venus margin-r-5"></i> Gender</strong>
-                            <p class="text-muted">Male</p>
-                            <hr>
-                            <strong><i class="fa fa-map-marker margin-r-5"></i> Address</strong>
-                            <p class="text-muted">Block 8 Lot 13 Hidden Street, Barangay Uchiha, Konoha City, Konohagakure</p>
-                            <hr>
-                            <strong><i class="fa fa-birthday-cake margin-r-5"></i> Birthdate</strong>
-                            <p class="text-muted">June 9, 1983</p>
-                            <hr>
-                            <strong><i class="fa fa-mobile margin-r-5"></i> Phone Number</strong>
-                            <p class="text-muted">0917-256-8947</p><hr>
-                            <strong><i class="fa fa-at margin-r-5"></i> Email Address</strong>
-                            <p class="text-muted">amaterasu@naruto.com</p>
-                            <!-- /.box-body -->
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
-                </div>
-                
-                <div class="box box-primary">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">Membership Details</h3>
-                        <ul class="list-group list-group-unbordered">
-                            <li class="list-group-item">
-                                <b>Package</b> <a class="pull-right">Free Membership</a>
-                            </li>
-                            <li class="list-group-item">
-                                <b>Start Date</b> <a class="pull-right">November 23, 2014</a>
-                            </li>
-                            <li class="list-group-item">
-                                <b>Expiration</b> <a class="pull-right">November 23, 2020</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.box-body -->
-                </div>
-                <!-- /.Left col -->
+      <div class="row">
+        <div class="col-md-3">
+          <div class="box box-solid">
+            <div class="box-header with-border">
+              <h4 class="box-title">Draggable Events</h4>
             </div>
-                <!-- right col (We are only adding the ID to make the widgets sortable)-->
-            <div class="col-md-9">
-                <div class="nav-tabs-custom">
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a href="#activity" data-toggle="tab">Reservations</a></li>
-                        <li><a href="#settings" data-toggle="tab">Edit Profile</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="active tab-pane" id="activity">
-                            <h3 class="box-title">Reservation Details</h3>
-                        <ul class="list-group list-group-unbordered">
-                            <li class="list-group-item">
-                                <b>Check-in Date: </b> <a class="pull-right">January 10, 2018</a>
-                            </li>
-                            <li class="list-group-item">
-                                <b>Check-out Date: </b> <a class="pull-right">January 11, 2018</a>
-                            </li>
-                            <li class="list-group-item">
-                                <b>Room Type: </b> <a class="pull-right">Sihi Room</a>
-                            </li>
-                            <li class="list-group-item">
-                                <b>Add-Ons: </b> <a class="pull-right">Pick-up & Drop-Off(Butuan)</a>
-                            </li>
-                            <li class="list-group-item"> 
-                                <b> - </b> <a class="pull-right">Boat Transfer</a>
-                            </li>
-                            <li class="list-group-item"> 
-                                <b> -</b> <a class="pull-right">Catering(Lunch & Dinner)</a>
-                            </li>
-                            <li class="list-group-item">
-                                <b>Payment Status: </b> <a class="pull-right">50% Down Payment Made (Palawan Express)</a>
-                            </li>
-                            <li class="list-group-item">
-                                <b>Amount Deposited: </b> <a class="pull-right">P20,000.00</a>
-                            </li>
-                            <li class="list-group-item">
-                                <b>Tracking Number: </b> <a class="pull-right">ZAW123456789</a>
-                            </li>
-                            <li class="list-group-item">
-                                <b>Notes: </b> <a class="pull-right">We will be late for check-in because we will still be meeting with Hidan and Zetsu.</a>
-                            </li>
-                            <li class="list-group-item">
- 
-                                <center><a href="test.html" class="btn btn-primary btn-block"><b>Edit Reservation</b></a></center>
-                                </li>
-                        </ul>
-                        </div>
-                        
-                        <!-- /.tab-pane -->
-
-                        <div class="tab-pane" id="settings">
-                            <form class="form-horizontal">
-                                <div class="form-group">
-                                    <label for="inputName" class="col-sm-2 control-label">Address</label>
-                                    <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="inputName" placeholder="Address">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputEmail" class="col-sm-2 control-label">Phone Number</label>
-                                    <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="inputEmail" placeholder="Phone Number">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputName" class="col-sm-2 control-label">Email Address</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputName" placeholder="Email Address">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <a href="test.html" class="btn btn-primary btn-block"><b>Submit</b></a>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <!-- /.tab-pane -->
-                    </div>
-                    <!-- /.tab-content -->
+            <div class="box-body">
+              <!-- the events -->
+              <div id="external-events">
+                <div class="external-event bg-green">Lunch</div>
+                <div class="external-event bg-yellow">Go home</div>
+                <div class="external-event bg-aqua">Do homework</div>
+                <div class="external-event bg-light-blue">Work on UI design</div>
+                <div class="external-event bg-red">Sleep tight</div>
+                <div class="checkbox">
+                  <label for="drop-remove">
+                    <input type="checkbox" id="drop-remove">
+                    remove after drop
+                  </label>
                 </div>
-                <!-- /.nav-tabs-custom -->
+              </div>
             </div>
-            <!-- right col -->          
+            <!-- /.box-body -->
+          </div>
+          <!-- /. box -->
+          <div class="box box-solid">
+            <div class="box-header with-border">
+              <h3 class="box-title">Create Event</h3>
+            </div>
+            <div class="box-body">
+              <div class="btn-group" style="width: 100%; margin-bottom: 10px;">
+                <!--<button type="button" id="color-chooser-btn" class="btn btn-info btn-block dropdown-toggle" data-toggle="dropdown">Color <span class="caret"></span></button>-->
+                <ul class="fc-color-picker" id="color-chooser">
+                  <li><a class="text-aqua" href="#"><i class="fa fa-square"></i></a></li>
+                  <li><a class="text-blue" href="#"><i class="fa fa-square"></i></a></li>
+                  <li><a class="text-light-blue" href="#"><i class="fa fa-square"></i></a></li>
+                  <li><a class="text-teal" href="#"><i class="fa fa-square"></i></a></li>
+                  <li><a class="text-yellow" href="#"><i class="fa fa-square"></i></a></li>
+                  <li><a class="text-orange" href="#"><i class="fa fa-square"></i></a></li>
+                  <li><a class="text-green" href="#"><i class="fa fa-square"></i></a></li>
+                  <li><a class="text-lime" href="#"><i class="fa fa-square"></i></a></li>
+                  <li><a class="text-red" href="#"><i class="fa fa-square"></i></a></li>
+                  <li><a class="text-purple" href="#"><i class="fa fa-square"></i></a></li>
+                  <li><a class="text-fuchsia" href="#"><i class="fa fa-square"></i></a></li>
+                  <li><a class="text-muted" href="#"><i class="fa fa-square"></i></a></li>
+                  <li><a class="text-navy" href="#"><i class="fa fa-square"></i></a></li>
+                </ul>
+              </div>
+              <!-- /btn-group -->
+              <div class="input-group">
+                <input id="new-event" type="text" class="form-control" placeholder="Event Title">
+
+                <div class="input-group-btn">
+                  <button id="add-new-event" type="button" class="btn btn-primary btn-flat">Add</button>
+                </div>
+                <!-- /btn-group -->
+              </div>
+              <!-- /input-group -->
+            </div>
+          </div>
         </div>
-        <!-- /.row (main row) -->
-      </section>
+        <!-- /.col -->
+        <div class="col-md-9">
+          <div class="box box-primary">
+            <div class="box-body no-padding">
+              <!-- THE CALENDAR -->
+              <div id="calendar"></div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /. box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
       
     <!-- /.content -->
   </div>

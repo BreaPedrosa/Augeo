@@ -82,7 +82,6 @@
         </div>
         <div class="pull-left info">
           <p>Alexander Pierce</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
       <!-- search form -->
@@ -120,14 +119,6 @@
             </span>
           </a>
         </li>
-        <li>
-          <a href="staff-sales.php">
-            <i class="fa fa-archive"></i> <span>Sales</span>
-            <span class="pull-right-container">
-            </span>
-          </a>
-        </li>
-
 
       </ul>
     </section>
